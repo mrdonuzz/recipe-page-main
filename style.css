@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --main-font: "Young Serif", serif;
+    --desc-font: "Outfit", sans-serif; 
+    --size-desc: 1.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--desc-font);
+    color: hsl(24, 5%, 18%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    background-color: white;
+    margin: 5% 27%;
+    border-radius: 1.4rem;
+    padding: 2%;
+}
+
+img {
+    border-radius: 1.4rem;
+    width: 100%;
+}
+
+.main-header {
+    font-family: var(--main-font);
+    font-size: 2.4rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.main-header.main {
+    font-size: 3.6rem;
+    color: hsl(24, 5%, 18%);
+    margin: 1.6rem 0;
+}
+
+.desc-header {
+    font-size: var(--size-desc);
+}
+
+.pre-box {
+    margin: 1.6rem 0;
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.2rem 2.4rem;
+    border-radius: 1rem;
+}
+
+.pre-box h3 {
+    font-size: 1.8rem;
+    color: hsl(332, 51%, 32%);
+}
+
+.pre-box ul {
+    padding-left: 1.7rem;
+    font-size: var(--size-desc);
+}
+
+.pre-box ul li {
+    margin:  1.2rem 0;
+}
+
+.pre-box ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.pre-box ul li span {
+    font-weight: 700;
+}
+
+.ingre ul {
+    padding-left: 2.8rem;
+    font-size: var(--size-desc);
+}
+
+.ingre ul li {
+    margin: 1.6rem 0;
+    padding-left: .6rem;
+}
+
+.ingre hr {
+    opacity: 0.4;
+    margin-top: 2.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.instr ol {
+    padding-left: 2.6rem;
+    font-size: var(--size-desc);
+}
+
+.instr ol li {
+    margin: 1.2rem 0;
+    padding-left: .6rem;
+}
+
+.instr ol li span {
+    font-weight: 700;
+}
+
+.instr hr {
+    opacity: 0.4;
+    margin-top: 2.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.nutri p {
+    font-size: var(--size-desc);
+    margin: 1.4rem 0;
+}
+
+.nutri table {
+    font-size: var(--size-desc);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutri table tr td {
+    padding: 1.6rem;
+}
+
+.nutri .unit {
+    font-weight: 700;
+}
+
+.nutri table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.ingre ul li::marker,
+.instr ol li::marker,
+.nutri .unit {
+    color: hsl(14, 45%, 36%);
+}
+
+.instr ol li::marker {
+    font-weight: 700;
+}
+
+@media only screen and (max-width:412px) {
+    .container {
+        margin: 0;
+    }
+}
